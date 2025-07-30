@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://kit.fontawesome.com/65f14357b9.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>My Portfolio</title>
+</head>
+<body> 
+  <header>
+    <nav>
+      <ul data-aos="zoom-in" data-aos-duration="3000">
+        <li><span>DeeTech</span></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><i class="fa fa-bandcamp"></i></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="hello-world">
+    <h2>Hello! World!</h2>
+  </div>
+  <section>
+    <div class="hero">
+      <div class="container">
+        <div data-aos="zoom-in" data-aos-duration="3000">
+          <img src="images/Screenshot_20250729-095107_Gallery-removebg-preview (1).png" height="250px" alt="profile photo">
+          <div class="buttonBtn">
+            <a href="explore.html"><button>Explore Now</button></a>
+            <a href="contact.html"><button class="hire">Hire Me</button></a>
+          </div>
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="3000">
+          <h3>hello I'm Dee</h3>
+          <p>I'm a Front-End Developer with zeal for building responsive, user-friendly web application</p>
+        </div>
+      </div>
+      <div class="knowledge-gained" data-aos="zoom-in" data-aos-duration="3000">
+      <h3>HTML</h3><i class="fa fa-arrows-h"></i>
+      <h3>CSS</h3><i class="fa fa-arrows-h"></i>
+      <h3>BOOTSTRAP</h3><i class="fa fa-arrows-h"></i>
+      <h3>JAVASCRIPT</h3>
+    </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="about" data-aos="zoom-in" data-aos-duration="3000">
+      <h3>ABOUT ME</h3><hr>
+      <i class="fa fa-arrows-h"></i>
+      <p>I enjoy turning ideas into something cool and clean, functional interface using JavaScript, CSS, Bootstrap CSS. I'm always open to learning and wants to be creative and improving, i focus on writing efficient code and creating smooth user experience.</p>
+    </div>
+  </section>
+  <div class="contact-container">
+    <h3 class="h3">Contact Me:</h3>
+  <div class="form-container">
+    <form action="https://formspree.io/f/mldlleed" method="post">
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea name="message" id="message" cols="20" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div></div>
+ 
+
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>   AOS.init(); </script>
+
+  <script>
+    const helloWorld = document.querySelector('.hello-world');
+
+    helloWorld.addEventListener('animationend', () => {
+      helloWorld.remove();
+    });
+  </script>
+</body>
+</html>

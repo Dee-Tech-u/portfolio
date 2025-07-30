@@ -1,0 +1,166 @@
+*,
+::before,
+::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #000;
+  font-weight: 400;
+  font-size: 1.3125rem;
+  line-height: 1.6;
+}
+header{
+  background: rgb(49, 48, 48);
+  padding: 8px;
+}
+span{
+  font-weight: bolder;
+  font-size: 18px;
+  color: aquamarine;
+}
+nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  padding: 3px;
+  font-size: small;
+}
+nav ul li a{
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  transition: linear 0.6s;
+}
+nav ul li a:hover{
+  background: rgb(34, 33, 33);
+  border-radius: 10px;
+  transition: linear 0.6s;
+}
+li:first-child{
+  margin-right: auto;
+}
+
+.container img{
+  border-radius: 5px;
+}
+.container{
+  background: #2e2b2b;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 30px;
+  padding: 30px 0px 0px 10px;
+}
+.buttonBtn{
+  padding: 10px;
+}
+button{
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: linear 0.6s;
+}
+button:hover{
+  background: #b8b4b4;
+  transition: linear 0.6s;
+}
+.hire{
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+
+.knowledge-gained{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  background: #2e2b2b;
+  font-size: small;
+  padding: 30px 15px;
+}
+
+.about{
+  padding: 80px;
+  background: #131212;
+}
+.fa-arrows-h, .fa-bandcamp{
+  color: #fff;
+  padding-top: 6px;
+}
+
+h1, h2, h3, h4, p{
+  color: #fff;
+}
+
+
+.hello-world{
+  background: #2e2b2b;
+  text-align: center;
+  animation: helloWorld;
+  animation-duration: 5s;
+  animation-direction: alternate-reverse;
+}
+@keyframes helloWorld{
+  from{
+    opacity: 1;
+    transform: scale(1);
+  }
+  to{
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  
+}
+.contact-container{
+  background: #0c0a0a;
+  padding: 30px;
+}
+.h3{
+  padding-bottom: 10px;
+}
+.form-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+label{
+  display: block;
+  border: none;
+  color: #fff;
+}
+input{
+  background: transparent;
+  color: #fff;
+  border: none;
+  border-bottom: 2px solid #525050;
+  outline: none;
+}
+textarea{
+  background: transparent;
+  border: 2px solid #525050;
+  outline: none;
+  color: #fff;
+  font-size: large;
+}
+button{
+  display: block;
+   background: rgb(63, 63, 70);
+  color: #fff;
+  width: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: linear 0.6s;
+}
+button:hover{
+  background: rgb(9, 9, 34);
+  transition: linear 0.6s;
+}
