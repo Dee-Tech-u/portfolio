@@ -14,6 +14,7 @@ body{
 header{
   background: rgb(49, 48, 48);
   padding: 8px;
+  width: 100%;
 }
 span{
   font-weight: bolder;
@@ -48,15 +49,38 @@ li:first-child{
 .container img{
   border-radius: 5px;
 }
-.container{
+.hero{
   background: #2e2b2b;
+  
+}
+.container{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  gap: 30px;
+  gap: 10px;
   padding: 30px 0px 0px 10px;
 }
+@media (max-width: 480px) {
+  .container{
+    flex-direction: column;
+  }
+  nav ul{
+    font-size: 10px;
+  }
+}
+.img-explore-hireMe{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 308px) {
+  .img-explore-hireMe{
+    flex-direction: column;
+  }
+}
 .buttonBtn{
+  display: flex;
   text-decoration: none;
   padding: 10px;
 }
@@ -72,7 +96,8 @@ button:hover{
   background: #b8b4b4;
   transition: linear 0.6s;
 }
-.hire{
+.hire, a{
+  text-decoration: none;
   background: transparent;
   border: none;
   color: #fff;
